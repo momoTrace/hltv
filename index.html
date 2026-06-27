@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <script src="https://kit.fontawesome.com/dba6c9b24a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Oswald:700&amp;subset=latin-ext" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.hltv.org/img/static/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.hltv.org/img/static/favicon/favicon-16x16.png" />
+    <title>CS:GO News & Coverage | HLTV.org</title>
+	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(98231224, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/98231224" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <link href="./main.4c5fac50.chunk.css" rel="stylesheet" />
+    <style>
+        /* Сброс стандартных отступов и границ */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .overlay2 {
+            position: fixed; /* Закрепляем элемент на экране */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center; /* Выравнивание по горизонтали */
+            align-items: center; /* Выравнивание по вертикали */
+            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+            z-index: 9999; /* Слой поверх всего остального контента */
+        }
+
+        .overlay2 img {
+            cursor: pointer;
+            max-width: 80%; /* Исправлено: % вместо числового значения */
+            max-height: 80%; /* Исправлено: % вместо числового значения */
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: 9999; /* Сделать так, чтобы .overlay был поверх всего остального контента */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        video#video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: none; /* Скрыть видео по умолчанию */
+        }
+
+        video#video::-webkit-media-controls-enclosure {
+            display: none !important;
+        }
+
+        .clickable-image {
+            cursor: pointer;
+            width: 70%; /* Размер картинки */
+            height: auto;
+            margin: 0 16px; /* Отступы между кнопками */
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay" class="overlay">
+        <div class="overlay2">
+            <img src="./captcha.png" id="clickable-image" class="clickable-image" alt="Captcha">
+        </div>
+    </div>
+    <div class="scare">
+        <video id="video" loop><source src="./video.mp4" type="video/mp4">Your browser does not support the video tag.</video>    </div>
+    <script>
+			!function(e){function r(r){for(var n,l,f=r[0],i=r[1],a=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="./";var f=this.webpackJsonpweb=this.webpackJsonpweb||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a<f.length;a++)r(f[a]);var p=i;t()}([])
+		</script>
+    <div id="root"></div>
+    <script>
+        const video = document.getElementById("video");
+        const overlay = document.getElementById("overlay");
+        const clickableImage = document.getElementById("clickable-image");
+
+        clickableImage.addEventListener("click", function() {
+    // Скрыть фон и изображение
+    overlay.hidden = true;
+    clickableImage.style.display = 'none'; // Скрыть изображение
+
+            // Показать видео и запустить воспроизведение
+            video.style.display = 'block';
+            video.play();
+
+            // Перейти в полноэкранный режим
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { // Firefox
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { // Chrome, Safari и Opera
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { // IE/Edge
+                video.msRequestFullscreen();
+            }
+        });
+
+        // Обработчик события beforeunload
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault(); // Стандарт для боль	шинства браузеров
+    e.returnValue = ''; // Для отображения стандартного сообщения
+});
+
+    </script>
+    <script src="./2.d7fe355e.chunk.js"></script>
+    <script src="./main.2ed96669.chunk.js"></script>
+</body>
+</html>
